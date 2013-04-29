@@ -9,6 +9,10 @@ int main(void){
 	printf("%d \n",m);
 	return 0;
 }
+/*
+	displays all strings in the choices array
+	the prompt is displayed until a valid selection has been made
+*/
 int menu(const char *choices[], const char *prompt){
 	int i = 0;
 	int n = 0;

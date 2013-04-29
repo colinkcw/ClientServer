@@ -18,6 +18,9 @@ int main(void){
 	printf("%c\n",*b);
 	return 0;
 }
+/*
+	returns a pointer to the last largest integer in the integer array
+*/
 int *arr_last_max(const int *a,size_t n){
 	const int *p;
 	const int *max=a; 
@@ -28,6 +31,9 @@ int *arr_last_max(const int *a,size_t n){
 	}
 	return (int *)max;
 }
+/*
+	replaces all occurrences of the character oldc in the string s by the character newc
+*/
 size_t str_replace_all(char *s,int oldc,int newc){
 	char *p;
 	size_t i =0;
@@ -39,6 +45,9 @@ size_t str_replace_all(char *s,int oldc,int newc){
 	}
 	return i;
 }
+/*
+	returns a pointer to the last occurrence of the character c in the string s if found; otherwise returns null ponter
+*/
 char *str_find_last(const char *s, int c){
 	const char *p;
 	const char *last = 0;

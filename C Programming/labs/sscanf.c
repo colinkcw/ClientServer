@@ -7,6 +7,10 @@ int main(void){
 	get_first_last(stdin);
 	return 0;
 }
+/*
+	function used for user name input where the user must eneter,
+	a last name then a first name
+*/
 int get_last_first(FILE *fp){
 	char line[LINESIZE];
 	char first[LINESIZE], last[LINESIZE];
@@ -21,6 +25,9 @@ int get_last_first(FILE *fp){
 		}
 	return -1;
 }
+/*
+	function used for entering a user name first then last 
+*/
 int get_first_last(FILE *fp){
 	char line[LINESIZE];
 	char first[LINESIZE], last[LINESIZE];

@@ -8,7 +8,7 @@ size_t array_index_of_last_max(const int a[], size_t n);
 int array_equal(const int a[], const int b[], size_t n);
 
 int main(void){
-
+// test arrays
 	int a[] = {2,5,8,3,1};
 	int b[] = {2,5,8,3,1};
 	int c[] = {2,6,7,8,2};
@@ -34,7 +34,10 @@ int main(void){
 	
 	return 0;
 }
-
+/*
+	returns the value of the largest integer in the integer array of a of n elements
+	pre condition n >= 1
+*/
 int array_max(const int a[], size_t n){
 	int max = a[0];
 	size_t i = 0;
@@ -45,6 +48,10 @@ int array_max(const int a[], size_t n){
 	}
 	return max;
 }
+/*
+	returns the index of the largest integer in the integer array a of n elements;
+	if integer occurs more than once return the index of the first occurence
+*/
 size_t array_index_of_first_max(const int a[], size_t n){
 	int max = a[0];
 	size_t index = 0;
@@ -57,6 +64,10 @@ size_t array_index_of_first_max(const int a[], size_t n){
 	}
 	return index;
 }
+/*
+	returns the index of the largest integer in the array, 
+	if the largest integer occurs more than once return the index of the last occurence
+*/
 size_t array_index_of_last_max(const int a[], size_t n){
 	int max = a[0];
 	size_t index = 0;
@@ -69,6 +80,9 @@ size_t array_index_of_last_max(const int a[], size_t n){
 	}
 	return index;
 }
+/*
+	returns 1 if all elements of the two arrays are equal otherwise return 0
+*/
 int array_equal(const int a[], const int b[], size_t n){
 	size_t i = 0;
 	for(i = 0 ; i < n ; i++){

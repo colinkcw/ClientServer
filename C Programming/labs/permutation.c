@@ -20,6 +20,9 @@ int main(void){
 	printf("%d\n%d\n%d\n",n,m,f);
 	return 0;
 }
+/*
+	returns 1 if a number n2 is a permutation of n1 otherwise return 0
+*/
 int is_permutation(unsigned long n1, unsigned long n2){
 	int count[] = {0,0,0,0,0,0,0,0,0,0,0};
 	size_t i = 0;

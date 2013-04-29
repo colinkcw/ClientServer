@@ -12,6 +12,9 @@ int main(void){
 	func_two(fp);
 	return 0;
 }
+/*
+ dumps contents of a file in hexadecimal format
+*/
 void func_one(FILE* fp){
 	int c;
 	int charcount = 0;
@@ -24,6 +27,9 @@ void func_one(FILE* fp){
 	}
 	fprintf(stderr,"\n%07x",charcount);
 }
+/*
+	dumps contents of a file in octal
+*/
 void func_two(FILE* fp){
 	int c;
 	int charcount = 0;

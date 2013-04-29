@@ -1,3 +1,8 @@
+
+/*
+ this exercise was to show how input and output
+ using structures and array of structures would be achieved 
+*/
 #include <stdio.h>
 #include <string.h>
 #define	NAMESIZE	20
