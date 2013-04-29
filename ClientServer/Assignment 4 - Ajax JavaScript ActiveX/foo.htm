@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function loadXMLDoc() {
+        var xmlhttp;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById('bar').value = xmlhttp.responseText;
+            }
+        }
+        var myquery = document.getElementById('foo').value;
+        xmlhttp.open("GET", "default.aspx?sqlstatement=" + myquery, true);
+        xmlhttp.send();
+    }
+</script>
+</head>
+<body>
+
+<div id="myDiv"></div>
+<button type="button" onclick="loadXMLDoc()" >Submit</button><br/>
+<input type="text" name="firstname" id="foo"/>
+
+</br>
+<textarea id="bar" rows="20" cols="60"/>
+</textarea>
+
+
+</body>
+</html>
+
