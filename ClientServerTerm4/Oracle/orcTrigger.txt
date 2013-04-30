@@ -1,0 +1,53 @@
+Drop table employee;
+drop table empHist;
+
+create table employee(
+	id		integer,
+	name	char(20),
+	dept	char(20),
+	address	char(20),
+	salary	integer
+);
+
+create table empHist(
+	id				integer,
+	oldSalary		integer,
+	newSalary		integer,
+	dateOfChange	DATE
+);
+
+create trigger update_employee 
+after insert or update or delete on employee
+for each row 
+
+begin
+	if inserting then
+		insert into empHist values(:new.id,0,:new.salary,sysdate);
+	elsif updating then
+		update empHist set oldSalary = newSalary
+		where  id = :new.id;
+		update empHist set newSalary = :new.salary
+		where  id = :new.id;
+	elsif deleting then
+		update empHist set oldSalary = newSalary
+		where  id = :old.id;
+		update empHist set newSalary = 0
+		where  id = :old.id;		
+	end if;
+end;
+/
+show errors;
+
+insert into employee values(42,'colin','foo','woo','2525');
+
+select * from empHist;
+
+UPDATE employee
+SET salary= 100000 where id= 42;
+
+select * from empHist;
+
+DELETE FROM employee
+WHERE id = 42;
+
+select * from empHist;

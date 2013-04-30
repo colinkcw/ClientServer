@@ -1,0 +1,12 @@
+DROP table student;
+Create table student
+(	id 		integer,
+	name	char(20),
+	gpa		integer);
+
+CREATE or replace PROCEDURE insertStudent as 
+begin
+INSERT INTO student VALUES(1,'john',80);
+end;
+/
+show errors;
