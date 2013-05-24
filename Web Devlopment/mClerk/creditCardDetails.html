@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Credit Card Details</title>
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<!--[if gte IE 9]>
+		  <style type="text/css">
+		    .gradient {
+		       filter: none;
+		    }
+		  </style>
+<![endif]-->
+</head> 
+<body class="gradient"> 
+
+<div data-role="page" data-theme="" id="creditCardDetails" class="">
+
+	<div data-role="header" data-theme="" id="" class="">
+		<h1 class="" id="">Credit Card Details</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content" role="main" id="" class="">
+	
+		<h2 class="" id=""><a href="newSaleInventoryAllItems.html" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back" data-direction="reverse">Back</a> Credit Card Details</h2>
+		
+		<div class="" id="">
+			<select name="cardType" id="cardType" data-mini="true" class="">
+				<option value="" class="">Visa</option>
+				<option value="" class="">Master Card</option>
+				<option value="" class="">American Express</option>
+			</select>
+		</div><!-- /card type -->
+			
+		<div class="" id="">
+			<label for="cardNumber" class="text">
+				<span class="">Card number</span>
+			</label>
+			<input id="cardNumber" name="cardNumber" placeholder="" title="Card number" type="text" class="text" value="" required />
+		</div><!-- /card number -->
+			
+		<div class="ui-grid-a" id="">
+			<div class="ui-block-a" id="">
+				<label for="cardExp" class="text">
+					<span class="">Exp.</span>
+				</label>
+				<input id="cardExp" name="cardExp" placeholder="" title="Exp." type="text" class="text" value="" required />
+			</div><!-- /block-a - card exp -->
+			<div class="ui-block-b" id="">
+				<label for="cardCVC" class="text">
+					<span class="">CVV / CVC</span>
+				</label>
+				<input id="cardCVC" name="cardCVC" placeholder="" title="CVV / CVC" type="text" class="text" value="" required />
+			</div><!-- /card cvc -->
+		</div><!-- /grid-a -->
+		
+		<div class="" id="">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a">
+					<a href="" data-role="button" data-theme="c" data-transition="slide" data-direction="reverse">Cancel</a>
+				</div><!-- /block-a cancel -->
+				<div class="ui-block-b">
+					<a href="" data-role="button" data-theme="b" data-transition="slide">Next</a>
+				</div><!-- /block-b next -->
+			</fieldset><!-- /fieldset -->
+		</div><!-- /apply-previous buttons -->
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer" id="" class="">
+		<nav class="footer-nav">
+			<ul class="nav-list">
+				<li class="nav-item" id=""><a href="" class="" id="">Privacy</a></li>
+				<li class="nav-item" id=""><a href="" class="" id="">Terms</a></li>
+				<li class="nav-item" id=""><a href="" class="" id="">Support</a></li>
+			</ul><!-- /navigation items -->
+			<p class="copyright">&copy; 2012 Alligato Inc. All rights reserved.</p>
+		</nav><!-- /navigation -->
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+
+<script src="js/application.js" type="text/javascript"></script>
+<script src="js/global.js" type="text/javascript"></script>
+
+</body>
+</html>

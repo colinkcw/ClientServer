@@ -1,0 +1,427 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+
+body 
+{
+	line-height: 1;
+}
+
+ol, ul 
+{
+	list-style: none;
+}
+
+blockquote, q 
+{
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+
+table 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* END HTML5 display-role reset for older browsers */
+
+/* BEGIN GLOBAL styling */
+body 
+{
+	font-family:Helvetica,Arial,sans-serif
+}
+
+h2 
+{
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0 0 15px 0;
+}
+
+.error 
+{
+	color: #ff0000;
+}
+
+.left 
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
+}
+
+[data-role="button"] 
+{
+	min-height: 26px;
+	min-width: 26px;
+}
+
+[data-role="button"] .ui-icon-back 
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#button_link
+{
+	text-align: left;
+}
+
+/* BEGINNING INLINE MESSAGING:
+Example and can be used for making the inline Error box and error report hanlding for all error instances that are caught from client side. */
+
+.hidden 
+{
+	display: none!important;
+}
+
+.message-box p,.message-box-success p,.message-box-error p,.message-box ul,.message-box-success ul,.message-box-error ul 
+{
+	margin-bottom: 10px;
+	margin-left: 25px;
+}
+
+.message-box p,.message-box-success p,.message-box-error p
+{
+	font-weight: bold;
+}
+
+.icon-sprite,.message-box:after,.message-box-success:after,.message-box-error:after 
+{
+	background: url('../images/icons_sprite.png') no-repeat;
+}
+
+.message-box:after,.message-box-success:after,.message-box-error:after 
+{
+	content: "";
+	background-position: 0 -75px;
+	height: 21px;
+	width: 20px;
+	display: block;
+	position: absolute;
+	top: 11px;
+	left: 12px
+}
+
+.message-box-error:after 
+{
+	background-position: 0 -18px;
+	height: 19px;
+	width: 20px;
+}
+
+.message-box,.message-box-success,.message-box-error 
+{
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,0.12) inset,0 1px 0 rgba(0,0,0,0.05) inset;
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.12) inset,0 1px 0 rgba(0,0,0,0.05) inset;
+	-o-box-shadow: 0 0 3px rgba(0,0,0,0.12) inset,0 1px 0 rgba(0,0,0,0.05) inset
+	box-shadow: 0 0 3px rgba(0,0,0,0.12) inset,0 1px 0 rgba(0,0,0,0.05) inset;
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	background: #a4a4a4;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9c9c9c), color-stop(100%, #a4a4a4));
+	background-image: -webkit-linear-gradient(#9c9c9c,#a4a4a4);
+	background-image: -moz-linear-gradient(#9c9c9c,#a4a4a4);
+	background-image: -o-linear-gradient(#9c9c9c,#a4a4a4);
+	background-image: -ms-linear-gradient(#9c9c9c,#a4a4a4);
+	background-image: linear-gradient(#9c9c9c,#a4a4a4);
+	text-shadow: 0 -1px #838484;
+	color: #fff;
+	padding: 10px 15px 10px 15px;
+	margin: 0 0 15px;
+	clear: both!important;
+}
+
+.message-box-error 
+{
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMzAxOSIgc3RvcC1vcGFjaXR5PSIwLjY1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjMTAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)!important;
+	background: -moz-linear-gradient(top,  rgba(255,48,25,0.65) 0%, rgba(193,0,0,0.65) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,48,25,0.65)), color-stop(100%,rgba(193,0,0,0.65))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,48,25,0.65) 0%,rgba(193,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,48,25,0.65) 0%,rgba(193,0,0,0.65) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,48,25,0.65) 0%,rgba(193,0,0,0.65) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,48,25,0.65) 0%,rgba(193,0,0,0.65) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6ff3019', endColorstr='#a6c10000',GradientType=0 ); /* IE6-8 */
+}
+
+.message-box ul,.message-box-success ul,.message-box-error ul 
+{
+	list-style-type: disc;
+	font-weight: normal
+}
+
+
+/* END INLINE MESSAGING:
+Example and can be used for making the inline Error box and error report hanlding for all error instances that are caught from client side. */
+
+
+/* BEGINNING INPUT LABEL TREATMENT:
+Example and can be used for making the inline labels for input fields. */
+.input-actions li 
+{
+	position: relative;
+}
+
+label 
+{
+	position: absolute; 
+	padding: 5px 10px;
+	top: 0; /* PURE CSS causes probs with js though
+    -moz-transition: .5s all ease;
+    -ms-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    transition: .5s all ease;*/
+ 	z-index: 3;
+ }
+
+input 
+{
+	font-size: 12px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	border-radius: 3px;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"], textarea 
+{
+	border: 1px solid #ccc; 
+	height: 35px; 
+	padding: 0 10px; 
+	position: relative; 
+	-moz-box-shadow: inset 0 0 10px rgba(0,0,0,.06);
+	-webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.06);
+	box-shadow: inset 0 0 10px rgba(0,0,0,.06);
+	z-index: 2;
+}
+
+input[type="email"] 
+{
+}
+
+input[type="password"] 
+{
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="tel"]:focus 
+{
+}
+
+.fade-label-focus 
+{
+	-moz-transition: .4s all ease!important;
+	-ms-transition: .4s all ease!important;
+	-o-transition: .4s all ease!important;
+	-webkit-transition: .4s all ease!important;
+	transition: .4s all ease!important;
+}
+
+/* For reference, Placeholders if they were used — but this would need amending js files to accomodate*/
+input[type="email"]:-moz-placeholder 
+{
+	color: rgba(47,130,194,.6);
+}
+
+input[type="email"]:-ms-input-placeholder 
+{
+	color: rgba(47,130,194,.6);
+}
+
+input[type="email"]::-webkit-input-placeholder 
+{
+	color: rgba(47,130,194,.6);
+}
+
+input[type="tel"]:-moz-placeholder 
+{
+	color: rgba(47,130,194,.6);
+}
+
+input[type="tel"]:-ms-input-placeholder 
+{
+	color: rgba(47,130,194,.6);
+}
+
+input[type="tel"]::-webkit-input-placeholder 
+{
+	color: rgba(47,130,194,.6);
+}
+
+input[type="text"]:-moz-placeholder
+ {
+	color: rgba(47,130,194,.6);
+}
+
+input[type="text"]:-ms-input-placeholder 
+{
+	color: rgba(47,130,194,.6);
+}
+
+input[type="text"]::-webkit-input-placeholder 
+{
+	color: rgba(47,130,194,.6);
+}
+
+input[type="password"]:-moz-placeholder 
+{
+	color: rgba(237,28,112,.6);
+}
+
+input[type="password"]:-ms-input-placeholder 
+{
+	color: rgba(237,28,112,.6);
+}
+
+input[type="password"]::-webkit-input-placeholder
+{
+	color: rgba(237,28,112,.6);
+}
+/* END Placeholders*/
+
+/* FOOTER */
+[data-role=footer]
+{
+	font-size: 10px;
+	padding: 5px;
+	text-align: center;
+}
+
+.nav-list
+{
+	margin: 0 0 10px;
+}
+
+li.nav-item 
+{
+	margin-right: -1px;
+	border-right: 1px solid #e8e8e9;
+	padding: 0 10px;
+	text-align: center;
+	line-height: 0.8;
+	display: inline-block;
+	font-size: 14px;
+}
+
+.nav-item:last-child
+ {
+	border: none;
+	padding-right: 0;
+}
+.itemSet{
+	background-color: lightgrey;
+    margin-top:5px;
+	overflow:hidden;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.itemSetContentLhs{
+	margin-left:50px;
+	margin-top:10px;
+}
+.itemSetContentRhs{
+	margin-right:25px;
+}
+
+.itemSetMini
+{
+	background-color: lightgrey;
+    margin-top:5px;
+	overflow:hidden;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.itemSetMiniContentLhs
+{
+	margin-left:50px;
+	margin-top:10px;
+	padding-bottom: 10px;
+}
+.itemSetMiniContentRhs
+{
+	margin-right:25px;
+	margin-top: 1px;
+}
+
+.itemSetMiniContentRhsText
+{
+	margin-right:25px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.openItems{
+	max-height:0px;
+	height:0%;
+    display:block;
+	background-color: lightgrey;
+    overflow:hidden;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	-webkit-transition: max-height 500ms linear;
+}
+.openItems.displayedItems{
+    height:100%;
+    max-height: 500px;
+    -webkit-transition: max-height 500ms linear;
+}

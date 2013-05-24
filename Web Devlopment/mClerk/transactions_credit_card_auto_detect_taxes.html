@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Auto-Detect Taxes</title>
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<script type="text/javascript" src="jquery.clearable.js"></script>
+<link rel="stylesheet" href="jquery.clearable.css" type="text/css" media="screen" />
+<!--[if gte IE 9]>
+		  <style type="text/css">
+		    .gradient {
+		       filter: none;
+		    }
+		  </style>
+<![endif]-->
+</head> 
+<body class="gradient"> 
+
+<div data-role="page" data-theme="" class="" id="transactions_credit_card_tax">
+
+	<!-- BEGIN HEADER -->
+	<div data-role="header" data-theme="" class="" id="">
+		<h1 class="" id="">
+			Auto-Detect Taxes
+		</h1>
+	</div><!-- /header -->
+	<!-- END HEADER -->
+	
+	<!-- BEGIN CONTENT -->
+	<div data-role="content" role="main" class="" id="">
+
+		<h2 class="" id="">
+			<a href="transactions_credit_card.html" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-ajax="false" data-direction="reverse" class="" id="">Back</a>
+			Auto-Detect Taxes
+		</h2><!-- /heading/back button -->
+
+		<div class="itemSetMini" id="">
+			<fieldset class="ui-grid-a" id="">
+				<div class="ui-block-a" id="">
+					<div class="itemSetMiniContentLhs" id="">
+						<p class="" id="">Clothing for ages 16 and under:</p>
+					</div>
+				</div>
+				<div class="ui-block-b" id="">
+					<div class="itemSetMiniContentRhs" id="">
+						<select name="clothing" id="clothing" data-role="slider" data-mini="true" class="" id="">
+							<option value="off" class="" id="">Off</option>
+							<option value="on" class="" id="">On</option>
+						</select> 
+					</div>
+				</div>
+			</fieldset><!-- /clothing for ages 16 and under -->
+		</div>
+
+		<div class="itemSetMini" id="">
+			<fieldset class="ui-grid-a" id="">
+				<div class="ui-block-a" id="">
+					<div class="itemSetMiniContentLhs" id="">
+						<p class="" id="">Food and beverage:</p>
+					</div>
+				</div>
+				<div class="ui-block-b" id="">
+					<div class="itemSetMiniContentRhs" id="">
+						<select name="food_beverage" id="food_beverage" data-role="slider" data-mini="true" class="" id="">
+							<option value="off" class="" id="">Off</option>
+							<option value="on" class="" id="">On</option>
+						</select> 
+					</div>
+				</div>
+			</fieldset><!-- /food and beverage -->
+		</div>
+
+		<div class="itemSetMini" id="">
+			<fieldset class="ui-grid-a" id="">
+				<div class="ui-block-a" id="">
+					<div class="itemSetMiniContentLhs" id="">
+						<p class="" id="">Alcohol:</p>
+					</div>
+				</div>
+				<div class="ui-block-b" id="">
+					<div class="itemSetMiniContentRhs" id="">
+						<select name="alcohol" id="alcohol" data-role="slider" data-mini="true" class="" id="">
+							<option value="off" class="" id="">Off</option>
+							<option value="on" class="" id="">On</option>
+						</select> 
+					</div>
+				</div>
+			</fieldset><!-- /alcohol -->
+		</div>
+
+		<div class="itemSetMini" id="">
+			<fieldset class="ui-grid-a" id="">
+				<div class="ui-block-a" id="">
+					<div class="itemSetMiniContentLhs" id="">
+						<p class="" id="">Tobacco:</p>
+					</div>
+				</div>
+				<div class="ui-block-b" id="">
+					<div class="itemSetMiniContentRhs" id="">
+						<select name="tobacco" id="tobacco" data-role="slider" data-mini="true" class="" id="">
+							<option value="off" class="" id="">Off</option>
+							<option value="on" class="" id="">On</option>
+						</select> 
+					</div>
+				</div>
+			</fieldset><!-- /tobacco -->
+		</div>
+
+		<div id="" class="">
+			<ul class="" id="">
+				<li class="" id="">
+					<div class="ui-grid-a" id="">
+						<div class="ui-block-a" id="">
+							<a href="transactions_credit_card.html" title="Cancel" data-role="button" data-theme="" data-transition="slide" data-direction="reverse" data-ajax="false">Cancel</a>
+						</div><!-- /cancel button -->
+						<div class="ui-block-b" id="">
+							<input id="" class="" type="button" title="Save" value="Save" data-theme="b" />
+						</div><!-- /save button -->		
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div><!-- /content -->
+	<!-- END CONTENT -->
+	
+	<!-- BEGIN FOOTER -->
+	<div data-role="footer" class="" id="">
+		<nav class="footer-nav" id="">
+			<ul class="nav-list" id="">
+
+				<li class="nav-item">
+					<a href="#" class="" id="">Privacy</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="" id="">Terms</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="" id="">Support</a>
+				</li>
+
+			</ul><!-- /navigation items -->
+			<p class="copyright" id="">&copy; 2012 Alligato Inc. All rights reserved.</p>
+		</nav><!-- /navigation -->
+	</div><!-- /footer -->
+	<!-- END FOOTER -->
+	
+</div><!-- /page -->
+
+<script src="js/application.js" type="text/javascript"></script>
+<script src="js/global.js" type="text/javascript"></script>
+<script>
+
+	$(document).ready(function() 
+	{
+	    $('.clearable').clearable();
+	});
+	
+</script>
+</body>
+</html>

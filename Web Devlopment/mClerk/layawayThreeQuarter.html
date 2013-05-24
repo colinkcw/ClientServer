@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Layaway 3/4</title>
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<!--[if gte IE 9]>
+		  <style type="text/css">
+		    .gradient {
+		       filter: none;
+		    }
+		  </style>
+<![endif]-->
+
+<style type="text/css">
+.open
+{
+    width:100%;
+    top:75px;
+    left:75px;    
+    height:0px;
+    overflow-y:hidden;
+    transition: height 2s linear;
+    -moz-transition: height 2s linear; /* Firefox 4 */
+    -webkit-transition: height 200ms linear; /* Safari and Chrome */
+    -o-transition: height 2s linear; /* Opera */    
+}
+
+.open.displayed
+{
+    height:290px;
+}
+.open.close
+{
+	height:0px;
+}
+</style>
+</head> 
+<body class="gradient"> 
+
+<div data-role="page" data-theme="" id="layawayThreeQuarter">
+
+	<div data-role="header" data-theme="" class="" id="">
+		<h1 class="" id="">Layaway 3/4</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content" role="main" class="" id="">
+	
+		<h2 class="" id=""><a href="" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back" data-direction="reverse">Back</a> Item Order Name</h2>
+		
+		<div class="" id="">
+			<div class="ui-grid-a" id="">
+				<div class="ui-block-a" id="">InStock: ##</div>
+				<div class="ui-block-b" id="">OnLocation: ##</div>
+			</div><!-- /grid-a -->
+		</div><!-- /stock quantity -->
+		
+		<div class="" id="">
+			<p class="" id="">Select a Pick-Up Location</p>
+			
+			<div class="" id="">
+				<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+					<input type="radio" name="radio-mini" id="radio-mini-1" value="choice-1" checked="checked" />
+					<label for="radio-mini-1">By Location</label>
+
+					<input type="radio" name="radio-mini" id="radio-mini-2" value="choice-2"  />
+					<label for="radio-mini-2">By Availability</label>
+				</fieldset>
+			</div><!-- /by location/availability radio buttons -->
+		</div><!-- /selection -->
+			
+		<div class="" id ="">
+			<div class="ui-grid-a" id="">
+				<div class="ui-block-a" id="">
+					<p class="" id="">
+						Current Location<br/>
+						213 Kingsway St.<br/>
+						Vancouver, BC<br/>
+						Canada<br/>
+						604-123-4576<br/>
+					</p>
+				</div><!-- /block-a store address-->
+				<div class="ui-block-b" id="">
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+					   <input type="checkbox" name="checkbox-change-location" id="checkbox-change-location" class="custom" />
+					   <label for="checkbox-change-location">Change Location</label>
+					</fieldset>
+				</div><!-- /block-b -->
+			</div><!-- /grid-a -->
+			
+			<div class="open" id="notice">
+				<p class="" id="">*Please be sure to tell customers to allow for at least 2 business days before pick-up.</p>
+			</div>
+			
+			<div class="open" id="changeLocation">
+				<li class="" id="">
+					<select name="countryList" id="countryList" data-mini="true">
+						<option value="">Canada</option>
+						<option value="">United States</option>
+					</select>
+				</li><!-- /country -->
+					
+				<li class="" id="">
+					<select name="stateList" id="stateList" data-mini="true">
+						<option value="">BC</option>
+						<option value="">Alberta</option>
+					</select>
+				</li><!-- /province/state -->
+					
+				<li class="" id="">
+					<select name="cityList" id="cityList" data-mini="true">
+						<option value="">Vancouver</option>
+						<option value="">Burnaby</option>
+					</select>
+				</li><!-- /city -->
+					
+				<li class="" id="">
+					<select name="addressList" id="addressList" data-mini="true">
+						<option value="">878 Gilford St.</option>
+						<option value="">1455 Kingsway</option>
+					</select>
+				</li>
+			</div><!-- /location - addresses -->
+		</div><!-- /by location -->
+		
+		<div class="open" id="byAvailability">
+			<div class="" id="">
+				<li class="" id="">
+					<select name="countryList" id="countryList" data-mini="true">
+						<option value="">Canada</option>
+						<option value="">United States</option>
+					</select>
+				</li><!-- /country -->
+				<li class="" id="">
+					<select name="stateList" id="stateList" data-mini="true">
+						<option value="">BC</option>
+						<option value="">Alberta</option>
+					</select>
+				</li><!-- /province/state -->
+				<li class="" id="">
+					<select name="cityList" id="cityList" data-mini="true">
+						<option value="">Vancouver</option>
+						<option value="">Burnaby</option>
+					</select>
+				</li><!-- /city -->
+			</div><!-- /availibility - locations -->
+			
+			<div class="" id ="">
+				<div class="ui-grid-a" id="">
+					<div class="ui-block-a" id="">
+						<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-count ui-btn-up-c">
+							<div class="ui-btn-inner ui-li">
+								<div class="ui-btn-text">
+									<a href="" class="ui-link-inherit">435 Gilford St. <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">328</span></a>
+								</div>
+							</div>
+						</li>
+						<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-count ui-btn-up-c">
+							<div class="ui-btn-inner ui-li" id="">
+								<div class="ui-btn-text" id="">
+									<p>3811 Kingsway St. <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">7</span></p>
+								</div>
+							</div>
+						</li>
+						<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-count ui-btn-up-c">
+							<div class="ui-btn-inner ui-li" id="">
+								<div class="ui-btn-text" id="">
+									<p>981 Boundary Rd. <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">13</span></p>
+								</div>
+							</div>
+						</li>
+					</div><!-- /block-a - addresses -->
+					<div class="ui-block-b" id="">
+						<fieldset data-role="controlgroup">
+							<input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+							<label for="radio-choice-1">.</label>
+
+							<input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+							<label for="radio-choice-2">.</label>
+							
+							<input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+							<label for="radio-choice-3">.</label>
+						</fieldset>
+					</div><!-- /block-b - addresses -->
+				</div><!-- /grid-a -->
+			</div><!-- /availibility - addresses -->
+		</div><!-- /by availability-->
+		
+		<div class="" id="">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a">
+					<a href="" data-role="button" data-theme="c" data-transition="slide" data-direction="reverse">Previous</a>
+				</div><!-- /block-a previous -->
+				
+				<div class="ui-block-b">
+					<a id="" href="" data-role="button" data-theme="b" data-transition="slide">Apply</a>
+				</div><!-- /block-b apply -->
+			</fieldset><!-- /grid-a -->
+		</div><!-- /apply-previous buttons -->
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<nav class="footer-nav">
+			<ul class="nav-list">
+				<li class="nav-item"><a href="" class="" id="">Privacy</a></li>
+				<li class="nav-item"><a href="" class="" id="">Terms</a></li>
+				<li class="nav-item"><a href="" class="" id="">Support</a></li>
+			</ul><!-- /navigation items -->
+			<p class="copyright">&copy; 2012 Alligato Inc. All rights reserved.</p>
+		</nav><!-- /navigation -->
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+
+<script src="js/application.js" type="text/javascript"></script>
+<script src="js/global.js" type="text/javascript"></script>
+<script>
+	$("input[id='radio-mini-1']").bind( "change", function(event, ui) {
+		$("#notice").toggleClass( "displayed" ); 	
+	});
+	
+	$("input[id='checkbox-change-location']").bind( "change", function(event, ui) {
+		$("#changeLocation").toggleClass( "displayed" ); 	
+	});
+	
+	$("input[id='radio-mini-2']").bind( "change", function(event, ui) {
+		$("#byAvailability").toggleClass( "displayed" ); 	
+	});
+	
+	$( ".foo" ).bind( "click", function(event, ui) {
+		$("#question-drop").toggleClass( "displayed" ); 
+	});
+</script>
+
+</body>
+</html>

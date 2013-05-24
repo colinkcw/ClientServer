@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Reset PIN</title>
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<script type="text/javascript" src="jquery.clearable.js"></script>
+<link rel="stylesheet" href="jquery.clearable.css" type="text/css" media="screen" />
+<!--[if gte IE 9]>
+		  <style type="text/css">
+		    .gradient {
+		       filter: none;
+		    }
+		  </style>
+<![endif]-->
+</head> 
+<body class="gradient"> 
+
+<div data-role="page" data-theme="" class="" id="reset_pin">
+
+	<!-- BEGIN HEADER -->
+	<div data-role="header" data-theme="" class="" id="">
+		<h1 class="" id="">
+			Reset PIN
+		</h1>
+	</div><!-- /header -->
+	<!-- END HEADER -->
+	
+	<!-- BEGIN CONTENT -->
+	<div data-role="content" role="main" class="" id="">
+
+		<h2 class="" id="">
+			<a href="set_reset_passwords.html" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-ajax="false" data-direction="reverse" class="" id="">Back</a>
+			Reset PIN
+		</h2><!-- /heading/back button -->
+
+		<div class="input-actions" id="">
+			<ul class="" id="">
+				<li class="field" id="">
+					<label for="current_pin" class="text"><span class="">Enter your current PIN</span></label>
+					<input id="current_pin" name="current_pin" placeholder="" title="Enter your current PIN" type="password" class="text" value="" requried />
+				</li><!-- /current pin input -->
+				<li class="field" id="">
+					<label for="new_pin" class="text"><span class="">Enter your new PIN</span></label>
+					<input id="new_pin" name="new_pin" placeholder="" title="Enter your new PIN" type="password" value="" class="text" required />
+				</li><!-- /new pin input -->
+				<li class="field" id="">
+					<label for="confirm_new_pin" class="text"><span class="">Re-enter your new PIN</span></label>
+					<input id="confirm_new_pin" name="confirm_new_pin" placeholder="" title="Re-enter your new PIN" type="password" value="" class="text" required />
+				</li><!-- /confirm new pin input -->
+			</ul>
+		</div><!-- /menu container -->
+
+		<div id="" class="">
+			<ul class="" id="">
+				<li class="" id="">
+					<div class="ui-grid-a" id="">
+						<div class="ui-block-a" id="">
+							<a href="set_reset_passwords.html" title="Cancel" data-role="button" data-theme="" data-transition="slide" data-direction="reverse" data-ajax="false">Cancel</a>
+						</div><!-- /cancel button -->
+						<div class="ui-block-b" id="">
+							<input id="" class="" type="button" title="Reset PIN" value="Reset PIN" data-theme="b" />
+						</div><!-- /reset PIN button -->		
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div><!-- /content -->
+	<!-- END CONTENT -->
+	
+	<!-- BEGIN FOOTER -->
+	<div data-role="footer" class="" id="">
+		<nav class="footer-nav" id="">
+			<ul class="nav-list" id="">
+
+				<li class="nav-item">
+					<a href="#" class="" id="">Privacy</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="" id="">Terms</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="" id="">Support</a>
+				</li>
+
+			</ul><!-- /navigation items -->
+			<p class="copyright" id="">&copy; 2012 Alligato Inc. All rights reserved.</p>
+		</nav><!-- /navigation -->
+	</div><!-- /footer -->
+	<!-- END FOOTER -->
+	
+</div><!-- /page -->
+
+<script src="js/application.js" type="text/javascript"></script>
+<script src="js/global.js" type="text/javascript"></script>
+<script>
+
+	$(document).ready(function() 
+	{
+	    $('.clearable').clearable();
+	});
+	
+</script>
+</body>
+</html>

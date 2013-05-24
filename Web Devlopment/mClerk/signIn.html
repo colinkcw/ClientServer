@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Sign In</title>
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<script type="text/javascript" src="jquery.clearable.js"></script>
+<link rel="stylesheet" href="jquery.clearable.css" type="text/css" media="screen" />
+<!--[if gte IE 9]>
+		  <style type="text/css">
+		    .gradient {
+		       filter: none;
+		    }
+		  </style>
+<![endif]-->
+</head> 
+<body class="gradient"> 
+
+<div data-role="page" data-theme="" id="signIn">
+
+	<div data-role="header" data-theme="">
+		<h1 class="" id="">{Branding Placeholder}</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content" role="main">
+	
+		<h2 class="" id="">Sign In</h2>
+		
+		<div class="message-box-error hidden"  id="">
+			<p class="error-message">There are a few errors:</p>
+			<ul class="" id="">
+				<li>Error message</li>
+			</ul>
+		</div><!-- /error message -->
+		
+		<div class="" id="">
+			<form id="" method="" action="" class="input-actions">
+				<ul class="" id="">
+					<li class="field" id="">
+						<label for="signInEmail" class="text"><span class="">Enter your email address</span></label>
+						<input id="signInEmail" name="signInEmail" placeholder="" title="Enter your email address" type="email" class="text" value="" requried />
+					</li><!-- /email input -->
+					<li class="field" id="">
+							<label for="signInPhone" class="text"><span class="">Enter your phone number</span></label>
+							<input id="signInPhone" name="signInPhone" placeholder="" title="Enter your phone number" type="tel" value="" class="clearble" required />
+					</li><!-- /phone input -->
+					<li class="field" id="">
+							<label for="signInUsername" class="clearable"><span class="">Enter your username</span></label>
+							<input id="signInUsername" name="signInUsername" placeholder="" title="Enter your username" type="tel" value="" class="clearable" required />
+					</li><!-- /username input -->
+					<li class="field" id="">
+							<label for="signInPassword" class="text"><span class="">Enter your password</span></label>
+							<input id="signInPassword" name="signInPassword" placeholder="" title="Enter your password" type="password" value="" class="text" required />
+					</li><!-- /password input -->
+					<li class="" id="">
+						<div class="" id="">
+							<a href="accountAssistance.html" data-theme="" data-transition="slide" data-role="button" data-iconpos="right" data-icon="arrow-r">Need Assistance With Your Account?</a>
+						</div>
+					</li><!-- /account assistance button -->
+				</ul>
+				<ul class="" id="">
+					<li class="" id="" data-theme="a">
+						<a href="error.html" data-theme="b" data-transition="pop" data-role="button" data-iconpos="right" data-icon="arrow-r" data-rel="dialog">Sign In</a>
+					</li><!-- /sign in button -->
+				</ul>
+			</form><!-- /form -->
+		</div><!-- /form container -->
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<nav class="footer-nav">
+			<ul class="nav-list">
+				<li class="nav-item"><a href="" class="" id="">Privacy</a></li>
+				<li class="nav-item"><a href="" class="" id="">Terms</a></li>
+				<li class="nav-item"><a href="" class="" id="">Support</a></li>
+			</ul><!-- /navigation items -->
+			<p class="copyright">&copy; 2012 Alligato Inc. All rights reserved.</p>
+		</nav><!-- /navigation -->
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+
+<script src="js/application.js" type="text/javascript"></script>
+<script src="js/global.js" type="text/javascript"></script>
+<script>
+$(document).ready(function() {
+    $('.clearable').clearable();
+});
+</script>
+</body>
+</html>

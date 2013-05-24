@@ -1,0 +1,162 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Input Fields</title>
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<script type="text/javascript" src="jquery.clearable.js"></script>
+<link rel="stylesheet" href="jquery.clearable.css" type="text/css" media="screen" />
+<!--[if gte IE 9]>
+		  <style type="text/css">
+		    .gradient {
+		       filter: none;
+		    }
+		  </style>
+<![endif]-->
+</head> 
+<body class="gradient"> 
+
+<div data-role="page" data-theme="" class="" id="customize_input">
+
+	<!-- BEGIN HEADER -->
+	<div data-role="header" data-theme="" class="" id="">
+		<h1 class="" id="">
+			Input Fields
+		</h1>
+	</div><!-- /header -->
+	<!-- END HEADER -->
+	
+	<!-- BEGIN CONTENT -->
+	<div data-role="content" role="main" class="" id="">
+
+		<h2 class="" id="">
+			<a href="look_and_feel.html" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-ajax="false" data-direction="reverse" class="" id="">Back</a>
+			Input Fields
+		</h2><!-- /heading/back button -->
+
+		<div class="itemSetMini" id="">
+			<fieldset class="ui-grid-a" id="">
+				<div class="ui-block-a" id="">
+					<div class="itemSetMiniContentLhs" id="">
+						<p class="" id="">Placeholder text fade in/out:</p>
+					</div>
+				</div>
+				<div class="ui-block-b" id="">
+					<div class="itemSetMiniContentRhs" id="">
+						<select name="toggle_button_icons" id="toggle_button_icons" data-role="slider" data-mini="true" class="" id="">
+							<option value="off" class="" id="">Off</option>
+							<option value="on" class="" id="">On</option>
+						</select> 
+					</div>
+				</div>
+			</fieldset><!-- /placeholder text fade in/out toggle -->
+		</div>
+
+		<div class="itemSetMini" id="">
+			<fieldset class="ui-grid-a" id="">
+				<div class="ui-block-a" id="">
+					<div class="itemSetMiniContentLhs" id="">
+						<p class="" id="">Placeholder text color:</p>
+					</div>
+				</div>
+				<div class="ui-block-b" id="">
+					<div class="itemSetMiniContentRhs" id="">
+						<select name="placeholder_color" id="placeholder_color" data-mini="true" class="">
+						   	<option value="Red" class="" id="">Red</option>
+				   			<option value="Green" class="" id="">Green</option>
+				   			<option value="Blue" class="" id="">Blue</option>
+				   			<option value="Yellow" class="" id="">Yellow</option>
+				   			<option value="Orange" class="" id="">Orange</option>
+				   			<option value="Black" class="" id="">Black</option>
+						</select> 
+					</div>
+				</div>
+			</fieldset><!-- /placeholder text color -->
+		</div>
+
+		<div class="itemSetMini" id="">
+			<fieldset class="ui-grid-a" id="">
+				<div class="ui-block-a" id="">
+					<div class="itemSetMiniContentLhs" id="">
+						<p class="" id="">Input text color:</p>
+					</div>
+				</div>
+				<div class="ui-block-b" id="">
+					<div class="itemSetMiniContentRhs" id="">
+						<select name="input_color" id="input_color" data-mini="true" class="">
+						   	<option value="Red" class="" id="">Red</option>
+				   			<option value="Green" class="" id="">Green</option>
+				   			<option value="Blue" class="" id="">Blue</option>
+				   			<option value="Yellow" class="" id="">Yellow</option>
+				   			<option value="Orange" class="" id="">Orange</option>
+				   			<option value="Black" class="" id="">Black</option>
+						</select> 
+					</div>
+				</div>
+			</fieldset><!-- /input text color -->
+		</div>
+
+		<div id="" class="">
+			<ul class="" id="">
+				<li class="" id="">
+					<div class="ui-grid-b" id="">
+						<div class="ui-block-a" id="">
+							<a href="look_and_feel.html" title="Return to Look &amp; Feel" data-role="button" data-theme="b" data-transition="slide" data-direction="reverse" data-icon="arrow-l" id="button_link" data-ajax="false">
+								Return to Look &amp; Feel
+							</a>	
+						</div>
+						<div class="ui-block-b" id="">
+							<input id="" class="" type="button" title="Restore Defaults" value="Restore Defaults" data-theme="c" />
+						</div><!-- /restore defaults button -->
+						<div class="ui-block-c" id="">
+							<input id="" class="" type="button" title="Save" value="Save" data-theme="b" />
+						</div><!-- /save button -->		
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div><!-- /content -->
+	<!-- END CONTENT -->
+	
+	<!-- BEGIN FOOTER -->
+	<div data-role="footer" class="" id="">
+		<nav class="footer-nav" id="">
+			<ul class="nav-list" id="">
+
+				<li class="nav-item">
+					<a href="#" class="" id="">Privacy</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="" id="">Terms</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="" id="">Support</a>
+				</li>
+
+			</ul><!-- /navigation items -->
+			<p class="copyright" id="">&copy; 2012 Alligato Inc. All rights reserved.</p>
+		</nav><!-- /navigation -->
+	</div><!-- /footer -->
+	<!-- END FOOTER -->
+	
+</div><!-- /page -->
+
+<script src="js/application.js" type="text/javascript"></script>
+<script src="js/global.js" type="text/javascript"></script>
+<script>
+
+	$(document).ready(function() 
+	{
+	    $('.clearable').clearable();
+	});
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arab Spring</title>
+<link rel="stylesheet" type="type/css" href="style.css">
+<script type="text/javascript" src="slideshow.js"></script>
+</head>
+ <body onload="firstImage();" bgcolor="black" text="white">
+	<h1>Arab Spring</h1>
+<body>
+<center>
+<img src="images/img1.jpg" name="slideshow" width="640" height="480" alt="firstslideimage" />
+	<details id="nav" open>
+    <summary>Navigation</summary>
+	<input title="First Image" onclick="first();"
+              type="image" src="buttons/first.png" alt="firstimage" />
+      <input title="Previous Image" onclick="chgImg(-1);" 
+              type="image" src="buttons/previous.png" alt="previousimage" />
+      <input title="Random Image" onclick="random();" 
+              type="image" src="buttons/random.png" alt="randomimage" />
+      <input title="Next Image" onclick="chgImg(1);" 
+              type="image" src="buttons/next.png" alt="nextimage" />
+      <input title="Last Image" onclick="last();" 
+              type="image" src="buttons/last.png" alt="lastimage" />
+	</body>
+</center>
+	<section>
+	Image Title:<span id="imgName" />img1.jpg</span>
+	</br>
+	Background Color:
+	<select name="list" id="color" onchange="changeBackground(this);">
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="brown">Brown</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+	</br>
+			<input type="checkbox" id="speed" onClick="auto()" />
+            Automatic change mode (<span id="seconds">3</span> seconds)
+    </br>
+</details>
+	</section>
